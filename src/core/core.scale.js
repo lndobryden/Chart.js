@@ -571,8 +571,8 @@ module.exports = function(Chart) {
 				} else {
 					lineWidth = helpers.getValueAtIndexOrDefault(gridLines.lineWidth, index);
 					lineColor = helpers.getValueAtIndexOrDefault(gridLines.color, index);
-					borderDash = helpers.getValueAtIndexOrDefault(gridLines.borderDash, index);
-					borderDashOffset = helpers.getValueAtIndexOrDefault(gridLines.borderDashOffset, index);
+					borderDash = helpers.getValueOrDefault(gridLines.borderDash, globalDefaults.borderDash);
+					borderDashOffset = helpers.getValueOrDefault(gridLines.borderDashOffset, globalDefaults.borderDashOffset);
 				}
 
 				// Common properties
